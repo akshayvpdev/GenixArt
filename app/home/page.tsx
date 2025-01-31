@@ -14,7 +14,14 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 function HomePage() {
-  const images = ["ai1.png","ai2.png","ai3.png","ai4.png","ai5.png","ai1.png"];
+  const images = [
+    "ai1.png",
+    "ai2.png",
+    "ai3.png",
+    "ai4.png",
+    "ai5.png",
+    "ai1.png",
+  ];
   return (
     <div className="min-h-screen bg-black">
       <div className="fixed inset-0">
@@ -40,7 +47,6 @@ function HomePage() {
           className="absolute bottom-0 -right-10 w-[500px] h-[500px] bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-3xl"
         />
       </div>
-
       <div className="relative">
         <section className="relative pt-32 pb-20 px-4">
           <div className="max-w-6xl mx-auto text-center">
@@ -149,7 +155,6 @@ function HomePage() {
           </div>
         </section>
 
-        {/* CTA Section */}
         <section className="py-20 px-4">
           <motion.div
             initial={{ opacity: 0 }}
