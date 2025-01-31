@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 function HomePage() {
-  const images = ["ai1.png","ai2.png","ai3.png","ai4.png","ai1.png","ai1.png"];
+  const images = ["ai1.png","ai2.png","ai3.png","ai4.png","ai5.png","ai1.png"];
   return (
     <div className="min-h-screen bg-black">
       <div className="fixed inset-0">
