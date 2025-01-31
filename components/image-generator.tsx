@@ -75,7 +75,7 @@ export function ImageGenerator() {
   };
 
   return (
-    <div className="grid gap-8 md:grid-cols-2 bg-dark">
+    <div className="grid gap-8 xl:grid-cols-2 bg-dark">
       <Card className="p-6 border-0   shadow-lg  transform transition-all duration-300 ease-in-out">
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold text-white">

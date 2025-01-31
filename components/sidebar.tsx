@@ -62,7 +62,7 @@ export function Sidebar() {
         id="menu-button"
         onClick={() => setIsOpen(!isOpen)}
         variant="ghost"
-        className="fixed top-4 left-4 z-50 p-2 md:hidden hover:bg-white/10"
+        className="fixed top-4 left-4 z-50 p-2 lg:hidden hover:bg-white/10"
         size="icon">
         {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </Button>
@@ -72,11 +72,11 @@ export function Sidebar() {
         className={`fixed top-0 left-0 h-screen w-[290px] z-40 
           transform transition-all duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"} 
-          md:translate-x-0 flex flex-col
+          lg:translate-x-0 flex flex-col
           bg-gradient-to-b from-gray-900 to-black `}>
         <div className="relative h-full flex flex-col">
           <div className="p-6 border-b border-white/10">
-            <div className="flex items-center gap-3">
+            <div className="flex justify-center items-center gap-3">
               <div className="p-2 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600">
                 <SparklesIcon className="h-6 w-6 text-white" />
               </div>
