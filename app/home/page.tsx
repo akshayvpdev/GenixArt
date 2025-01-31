@@ -8,11 +8,13 @@ import {
   Wand2,
   Zap,
   ChevronRight,
-  Image,
+  Image as ImageIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 function HomePage() {
+  const images = ["ai1.png","ai2.png","ai3.png","ai4.png","ai1.png","ai1.png"];
   return (
     <div className="min-h-screen bg-black">
       <div className="fixed inset-0">
@@ -81,12 +83,18 @@ function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
               className="grid grid-cols-3 gap-4 max-w-4xl mx-auto mt-20">
-              {[...Array(6)].map((_, i) => (
+              {images.map((url, i) => (
                 <div
                   key={i}
                   className="aspect-square rounded-2xl bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 p-2">
                   <div className="w-full h-full rounded-xl  flex items-center justify-center">
-                    <Image className="w-8 h-8 text-white/30" />
+                    <Image
+                      className="w-full h-full text-white/30"
+                      src={url}
+                      alt={`Image ${i + 1}`}
+                      width={100}
+                      height={100}
+                    />
                   </div>
                 </div>
               ))}
